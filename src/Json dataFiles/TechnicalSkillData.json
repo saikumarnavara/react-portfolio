@@ -1,0 +1,104 @@
+[
+  {
+    "id": 1,
+    "technologys": "web technologys",
+    "skills": [
+      {
+        "id": 1,
+        "tech": "React"
+      },
+      {
+        "id": 2,
+        "tech": "Javascript"
+      },
+      {
+        "id": 3,
+        "tech": "Css"
+      },
+      {
+        "id": 4,
+        "tech": "Html"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "technologys": "Amazon Web Services",
+    "skills": [
+      {
+        "id": 1,
+        "tech": "React"
+      },
+      {
+        "id": 2,
+        "tech": "Javascript"
+      },
+      {
+        "id": 3,
+        "tech": "Css"
+      },
+      {
+        "id": 4,
+        "tech": "Html"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "technologys": "web technologys",
+    "skills": [
+      {
+        "id": 1,
+        "tech": "React"
+      },
+      {
+        "id": 2,
+        "tech": "Javascript"
+      },
+      {
+        "id": 3,
+        "tech": "Css"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "technologys": "Backend Tech",
+    "skills": [
+      {
+        "id": 1,
+        "tech": "React"
+      },
+      {
+        "id": 2,
+        "tech": "Javascript"
+      },
+      {
+        "id": 3,
+        "tech": "Css"
+      },
+      {
+        "id": 4,
+        "tech": "Html"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "technologys": "Operating Skills",
+    "skills": [
+      {
+        "id": 1,
+        "tech": "React"
+      },
+      {
+        "id": 2,
+        "tech": "Javascript"
+      },
+      {
+        "id": 3,
+        "tech": "Css"
+      }
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "college_name": "Avanthi Institue of Engineering and Technology",
+    "degree": "Btech",
+    "Branch": "Mechanical Engineering",
+    "passedout": "2018 - 2021",
+    "percentage": "65%",
+    "Address": "Makavarapalem,Narsipatnam,Vskp"
+  },
+  {
+    "id": 2,
+    "college_name": "Sri Chaitanya Engineering College",
+    "degree": "Diploma",
+    "Branch": "Mechanical Engineering",
+    "passedout": "2014 - 2017",
+    "percentage": "62%",
+    "Address": "Kommadi,Madhurwada,Vskp"
+  },
+  {
+    "id": 3,
+    "college_name": "St.Anne's English Medium High School",
+    "degree": "SSC ,High School",
+    "Branch": "SSC",
+    "passedout": "2013 - 2014",
+    "percentage": "7.8",
+    "Address": "Lakshmipuram,Narsipatnam,Vskp"
+  }
+]

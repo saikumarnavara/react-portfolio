@@ -1,0 +1,111 @@
+[
+  {
+    "company": "tcs",
+    "designation": "Associate Sytem Engineer",
+    "role": "FrontEnd Developer",
+    "date": "June 2021 - July 2022",
+    "experienceLines": [
+      {
+        "id": 1,
+        "text": "Design, develop and test HTML, CSS3, JavaScript and React.JS that meets accessibility and web browser standards for website."
+      },
+      {
+        "id": 2,
+        "text": "Designed CSS templates for use in all pages on the website working with CSS Background, positioning, text, border, margin, and padding."
+      },
+      {
+        "id": 3,
+        "text": "Used React-Router to turn an application into a Single Page Application."
+      },
+      {
+        "id": 4,
+        "text": "Worked in using React JS components, Forms, Events, Keys, Router, Animations."
+      },
+      {
+        "id": 5,
+        "text": "Restful web services calls for POST, PUT, DELETE and GET methods."
+      },
+      {
+        "id": 6,
+        "text": "Used Object Oriented Programming concepts to develop UI components that could be reused across the Web Application."
+      },
+      {
+        "id": 7,
+        "text": "Extensively used Git for version controlling and regularly pushed the code to GitLab."
+      }
+    ]
+  },
+  {
+    "company": "wipro",
+    "designation": "Associate Sytem Engineer",
+    "role": "FrontEnd Developer",
+    "date": "June 2021 - July 2022",
+    "experienceLines": [
+      {
+        "id": 1,
+        "text": "Design, develop and test HTML, CSS3, JavaScript and React.JS that meets accessibility and web browser standards for website."
+      },
+      {
+        "id": 2,
+        "text": "Designed CSS templates for use in all pages on the website working with CSS Background, positioning, text, border, margin, and padding."
+      },
+      {
+        "id": 3,
+        "text": "Used React-Router to turn an application into a Single Page Application."
+      },
+      {
+        "id": 4,
+        "text": "Worked in using React JS components, Forms, Events, Keys, Router, Animations."
+      },
+      {
+        "id": 5,
+        "text": "Restful web services calls for POST, PUT, DELETE and GET methods."
+      },
+      {
+        "id": 6,
+        "text": "Used Object Oriented Programming concepts to develop UI components that could be reused across the Web Application."
+      },
+      {
+        "id": 7,
+        "text": "Extensively used Git for version controlling and regularly pushed the code to GitLab."
+      }
+    ]
+  },
+  {
+    "company": "rise",
+    "designation": "Associate Sytem Engineer",
+    "role": "FrontEnd Developer",
+    "date": "June 2021 - July 2022",
+
+    "experienceLines": [
+      {
+        "id": 1,
+        "text": "Design, develop and test HTML, CSS3, JavaScript and React.JS that meets accessibility and web browser standards for website."
+      },
+      {
+        "id": 2,
+        "text": "Designed CSS templates for use in all pages on the website working with CSS Background, positioning, text, border, margin, and padding."
+      },
+      {
+        "id": 3,
+        "text": "Used React-Router to turn an application into a Single Page Application."
+      },
+      {
+        "id": 4,
+        "text": "Worked in using React JS components, Forms, Events, Keys, Router, Animations."
+      },
+      {
+        "id": 5,
+        "text": "Restful web services calls for POST, PUT, DELETE and GET methods."
+      },
+      {
+        "id": 6,
+        "text": "Used Object Oriented Programming concepts to develop UI components that could be reused across the Web Application."
+      },
+      {
+        "id": 7,
+        "text": "Extensively used Git for version controlling and regularly pushed the code to GitLab."
+      }
+    ]
+  }
+]
