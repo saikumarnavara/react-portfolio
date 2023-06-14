@@ -89,15 +89,21 @@
 // export default FixedNavBar;
 
 import React from "react";
-import SchoolIcon from "@mui/icons-material/School";
 import { NavLink } from "react-router-dom";
+import home_logo from "../../../assets/Images/home_logo.png";
 const Drawer = () => {
   return (
     <div>
-      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
         <div class="container-fluid">
           <NavLink className="nav-link" exact to="/" activeClassName="active">
-            <img src={SchoolIcon} alt="" width="30" height="24" />
+            <img
+              src={home_logo}
+              alt=""
+              width="50"
+              height="44"
+              color="#2924a6"
+            />
           </NavLink>
           <button
             class="navbar-toggler"
@@ -121,6 +127,7 @@ const Drawer = () => {
                   exact
                   to="/"
                   activeClassName="active"
+                  style={{ fontWeight: 700, fontSize: "20px" }}
                 >
                   Home
                 </NavLink>
@@ -131,6 +138,7 @@ const Drawer = () => {
                   exact
                   to="/projects"
                   activeClassName="active"
+                  style={{ fontWeight: 700, fontSize: "20px" }}
                 >
                   Projects
                 </NavLink>
@@ -141,6 +149,7 @@ const Drawer = () => {
                   exact
                   to="/profile"
                   activeClassName="active"
+                  style={{ fontWeight: 700, fontSize: "20px" }}
                 >
                   Profile
                 </NavLink>
@@ -151,6 +160,8 @@ const Drawer = () => {
                   exact
                   to="/contactme"
                   activeClassName="active"
+                  color="#2924a6"
+                  style={{ fontWeight: 700, fontSize: "20px" }}
                 >
                   Contact Me
                 </NavLink>

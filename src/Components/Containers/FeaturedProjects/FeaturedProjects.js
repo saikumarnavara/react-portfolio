@@ -126,9 +126,9 @@ const FeaturedProjects = () => {
         style={{
           fontWeight: 700,
           marginTop: "20px",
-          borderBottom: "2px solid white",
+          borderBottom: "2px solid #2924a6",
           display: "inline-block",
-          color: "white",
+          color: "#2924a6",
         }}
       >
         Featured Projects
@@ -141,7 +141,9 @@ const FeaturedProjects = () => {
                 <div class="card">
                   <img src={demoProject} class="card-img-top" alt="loading.." />
                   <div class="card-body">
-                    <h5 class="card-title">{card.title}</h5>
+                    <h5 class="card-title" style={{ color: "#2924a6" }}>
+                      {card.title}
+                    </h5>
                     <p class="card-text">{card.description}</p>
                     <div
                       class="card-body d-flex"
