@@ -1,6 +1,7 @@
 import React from "react";
 import ContactInfoData from "../../../Json dataFiles/ContactInfoData.json";
 import SocialMediaApps from "../../Containers/SocialMedia/ScoialMediaApps";
+import "../FeaturedProjects/FeaturedProject.css";
 const ContactInfo = () => {
   const UserInfo = ContactInfoData;
   return (
@@ -15,7 +16,7 @@ const ContactInfo = () => {
             marginBottom: "20px",
           }}
         >
-          Contact Us
+          Contact Details
         </h1>
         <div class="col">
           {UserInfo.map((card) => {
@@ -24,7 +25,7 @@ const ContactInfo = () => {
                 {card.details.map((item, index) => {
                   return (
                     <div
-                      class="card bg-primary text-white"
+                      class="card shadow bg-primary text-white my-card"
                       key={index}
                       style={{ marginBottom: "10px" }}
                     >

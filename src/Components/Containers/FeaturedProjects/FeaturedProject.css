@@ -1,0 +1,19 @@
+.my-card {
+  transition: transform 0.3s ease-in-out;
+}
+.my-card:hover {
+  transform: scale(1.03);
+}
+
+@keyframes zoom-in {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.animate-zoom-in {
+  animation: zoom-in 2s forwards;
+}

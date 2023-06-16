@@ -24,8 +24,8 @@ const Experience = () => {
     setSelectedCompany(company);
   };
   const selectedCompColor = {
-    color: "#66FCF1",
-    borderLeft: "3px solid white",
+    color: "#2924a6",
+    borderLeft: "3px solid #2924a6",
     paddingLeft: "9px",
     marginLeft: "-3px",
   };
@@ -52,8 +52,8 @@ const Experience = () => {
         variant="h3"
         sx={{
           textAlign: "center",
-          color: "#66FCF1",
-          borderBottom: "2px solid black",
+          color: "#2924a6",
+          borderBottom: "2px solid #2924a6",
         }}
       >
         Experience

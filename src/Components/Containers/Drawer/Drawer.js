@@ -126,7 +126,7 @@ const Drawer = () => {
                   className="nav-link"
                   exact
                   to="/"
-                  activeClassName="active"
+                  activeClassName="active highlighted-color"
                   style={{ fontWeight: 700, fontSize: "20px" }}
                 >
                   Home

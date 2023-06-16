@@ -74,7 +74,7 @@
 
 import React from "react";
 import TechnicalSkillData from "../../../Json dataFiles/TechnicalSkillData.json";
-
+import "../FeaturedProjects/FeaturedProject.css";
 const TechnicalSkills = () => {
   const jsonDataa = TechnicalSkillData;
   return (
@@ -84,9 +84,9 @@ const TechnicalSkills = () => {
           style={{
             fontWeight: 700,
             marginTop: "20px",
-            borderBottom: "2px solid black",
+            borderBottom: "2px solid #2924a6",
             display: "inline-block",
-            color: "black",
+            color: "#2924a6",
             marginBottom: "10px",
           }}
         >
@@ -96,9 +96,11 @@ const TechnicalSkills = () => {
           {jsonDataa.map((card) => {
             return (
               <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                <div class="card" key={card.id}>
+                <div class="card shadow my-card" key={card.id}>
                   <div class="card-body">
-                    <h5 class="card-title">{card.technologys}</h5>
+                    <h5 class="card-title" style={{ color: "#2924a6" }}>
+                      {card.technologys}
+                    </h5>
                   </div>
                   <div
                     class="card-body d-flex"

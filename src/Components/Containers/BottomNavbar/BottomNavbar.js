@@ -8,29 +8,48 @@ const BottomNavbar = () => {
     >
       <Link
         to="/"
-        style={{ TextDecoration: "none", marginRight: "20px", color: "white" }}
+        style={{
+          TextDecoration: "none",
+          marginRight: "20px",
+          color: "#2924a6",
+        }}
       >
         <Typography variant="h6">Home</Typography>
       </Link>
       <Link
         to="/projects"
-        style={{ TextDecoration: "none", marginRight: "20px", color: "white" }}
+        style={{
+          TextDecoration: "none",
+          marginRight: "20px",
+          color: "#2924a6",
+        }}
       >
         <Typography variant="h6">Projects</Typography>
       </Link>
       <Link
         to="/about"
-        style={{ TextDecoration: "none", marginRight: "20px", color: "white" }}
+        style={{
+          TextDecoration: "none",
+          marginRight: "20px",
+          color: "#2924a6",
+        }}
       >
         <Typography variant="h6">About</Typography>
       </Link>
       <Link
         to="/profile"
-        style={{ TextDecoration: "none", color: "white", marginRight: "20px" }}
+        style={{
+          TextDecoration: "none",
+          color: "#2924a6",
+          marginRight: "20px",
+        }}
       >
         <Typography variant="h6">Profile</Typography>
       </Link>
-      <Link to="/contactme" style={{ TextDecoration: "none", color: "white" }}>
+      <Link
+        to="/contactme"
+        style={{ TextDecoration: "none", color: "#2924a6" }}
+      >
         <Typography variant="h6">Contact Me</Typography>
       </Link>
     </div>

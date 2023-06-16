@@ -7,7 +7,7 @@ import Education from "../Containers/InfoScreen/Education";
 import { Box } from "@mui/material";
 const Profile = () => {
   return (
-    <Box minHeight="100vh" sx={{ backgroundColor: "#1F2833" }}>
+    <Box minHeight="100vh" sx={{ backgroundColor: "#f5f6f" }}>
       <AboutUser />
       <Experience />
       <TechnicalSkills />

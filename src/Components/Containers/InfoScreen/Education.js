@@ -84,7 +84,8 @@
 
 import React from "react";
 import EducationDetails from "../../../Json dataFiles/EducationDetails.json";
-
+import EducationAvatar from "../../../assets/Images/EducationAvatar.jpg";
+import "../FeaturedProjects/FeaturedProject.css";
 const Education = () => {
   const EduDetails = EducationDetails;
   return (
@@ -93,9 +94,9 @@ const Education = () => {
         style={{
           fontWeight: 700,
           marginTop: "20px",
-          borderBottom: "2px solid black",
+          borderBottom: "2px solid #2924a6",
           display: "inline-block",
-          color: "black",
+          color: "#2924a6",
           marginBottom: "10px",
         }}
       >
@@ -105,10 +106,22 @@ const Education = () => {
         {EduDetails.map((card) => {
           return (
             <div class="col-md-4 mb-4">
-              <div class="card" key={card.id}>
-                <img src="..." alt="..." />
+              <div class="card shadow my-card" key={card.id}>
+                <div style={{ display: "flex", justifyContent: "center" }}>
+                  <img
+                    src={EducationAvatar}
+                    alt="..."
+                    style={{
+                      height: "auto",
+                      width: "200px",
+                      paddingTop: "10px",
+                    }}
+                  />
+                </div>
                 <div class="card-body">
-                  <h5 class="card-title">{card.college_name}</h5>
+                  <h5 class="card-title" style={{ color: "#2924a6" }}>
+                    {card.college_name}
+                  </h5>
                   <p>{card.degree}</p>
                   <p>{card.passedout}</p>
                   <p
