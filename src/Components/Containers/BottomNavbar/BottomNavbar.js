@@ -27,16 +27,6 @@ const BottomNavbar = () => {
         <Typography variant="h6">Projects</Typography>
       </Link>
       <Link
-        to="/about"
-        style={{
-          TextDecoration: "none",
-          marginRight: "20px",
-          color: "#2924a6",
-        }}
-      >
-        <Typography variant="h6">About</Typography>
-      </Link>
-      <Link
         to="/profile"
         style={{
           TextDecoration: "none",

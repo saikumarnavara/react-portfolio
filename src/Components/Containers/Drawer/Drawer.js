@@ -88,9 +88,10 @@
 // };
 // export default FixedNavBar;
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import home_logo from "../../../assets/Images/home_logo.png";
+import SignIn from "../Oauth/SignIn";
 const Drawer = () => {
   return (
     <div>
@@ -165,6 +166,10 @@ const Drawer = () => {
                 >
                   Contact Me
                 </NavLink>
+              </li>
+
+              <li class="nav-item">
+                <SignIn />
               </li>
             </ul>
           </div>
