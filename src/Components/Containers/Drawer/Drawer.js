@@ -92,7 +92,17 @@ import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import home_logo from "../../../assets/Images/home_logo.png";
 import SignIn from "../Oauth/SignIn";
+import Logout from "../Oauth/Logout";
 const Drawer = () => {
+  const [active, setActive] = useState(false);
+  useEffect(() => {
+    const IsUserLogged = localStorage.getItem("user");
+    if (IsUserLogged) {
+      setActive(true);
+    } else {
+      setActive(false);
+    }
+  }, [window.location.path, active, setActive]);
   return (
     <div>
       <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
@@ -167,10 +177,20 @@ const Drawer = () => {
                   Contact Me
                 </NavLink>
               </li>
-
               <li class="nav-item">
-                <SignIn />
+                <NavLink
+                  className="nav-link"
+                  exact
+                  to="/source"
+                  activeClassName="active"
+                  color="#2924a6"
+                  style={{ fontWeight: 700, fontSize: "20px" }}
+                >
+                  Source
+                </NavLink>
               </li>
+
+              <li class="nav-item">{active ? <Logout /> : <SignIn />}</li>
             </ul>
           </div>
         </div>

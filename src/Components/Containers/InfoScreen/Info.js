@@ -1,11 +1,26 @@
 import { Box, Button, Container, Grid, Link, Typography } from "@mui/material";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 import SocialMediaApps from "../../Containers/SocialMedia/ScoialMediaApps";
 import "@fontsource/kalam";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const NameInfo = () => {
   const navigate = useNavigate();
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      toast(
+        "Do you like the portfolio ? If you want you can download the source code from Source.. HappyCoding",
+        {
+          type: "info",
+          theme: "dark",
+          autoClose: false,
+        }
+      );
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const onClickHandler = () => {
     navigate("/profile");
@@ -38,6 +53,7 @@ const NameInfo = () => {
         >
           More About SaiKumar
         </Button>
+        <ToastContainer />
       </Container>
     </>
   );

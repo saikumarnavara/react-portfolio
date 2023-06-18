@@ -1,11 +1,12 @@
 import { GoogleLogin, GoogleOAuthProvider } from "@react-oauth/google";
 import { useNavigate } from "react-router";
+
 const SignIn = () => {
   const navigate = useNavigate();
-
   const onSuccess = (response) => {
     navigate("/source");
     localStorage.setItem("user", "LoggedIn");
+    window.location.reload();
     console.log("loggedin succesfully", response);
   };
 
@@ -23,7 +24,7 @@ const SignIn = () => {
           onSuccess={onSuccess}
           onError={onError}
         >
-          Login with google
+          Login with google \{" "}
         </GoogleLogin>
       </GoogleOAuthProvider>
     </div>

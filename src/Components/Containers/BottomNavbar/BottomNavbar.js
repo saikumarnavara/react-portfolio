@@ -42,6 +42,9 @@ const BottomNavbar = () => {
       >
         <Typography variant="h6">Contact Me</Typography>
       </Link>
+      <Link to="/source" style={{ TextDecoration: "none", color: "#2924a6" }}>
+        <Typography variant="h6">Source</Typography>
+      </Link>
     </div>
   );
 };

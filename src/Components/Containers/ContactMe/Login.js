@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Login = () => {
   const [userName, setUserName] = useState("");
   const [email, setEmail] = useState("");
@@ -7,6 +8,10 @@ const Login = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    toast(`Thankyou.. ${userName}! Soon we will reachout to you.`, {
+      theme: "dark",
+      type: "success",
+    });
     const Info = {
       name: userName,
       email: email,
@@ -71,6 +76,7 @@ const Login = () => {
             Submit
           </button>
         </form>
+        <ToastContainer />
       </div>
     </div>
   );
