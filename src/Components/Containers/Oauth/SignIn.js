@@ -24,7 +24,7 @@ const SignIn = () => {
           onSuccess={onSuccess}
           onError={onError}
         >
-          Login with google \{" "}
+          Login with google
         </GoogleLogin>
       </GoogleOAuthProvider>
     </div>
