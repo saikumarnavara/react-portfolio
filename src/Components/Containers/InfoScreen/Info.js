@@ -1,11 +1,26 @@
 import { Box, Button, Container, Grid, Link, Typography } from "@mui/material";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 import SocialMediaApps from "../../Containers/SocialMedia/ScoialMediaApps";
 import "@fontsource/kalam";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const NameInfo = () => {
   const navigate = useNavigate();
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      toast(
+        "Do you like the portfolio ? If you want you can download the source code from Source.. HappyCoding",
+        {
+          type: "info",
+          theme: "dark",
+          autoClose: false,
+        }
+      );
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const onClickHandler = () => {
     navigate("/profile");
@@ -19,23 +34,26 @@ const NameInfo = () => {
         <Box
           sx={{
             textAlign: "left",
-            marginTop: "62px",
+            marginTop: "60px",
             color: "#C5C6C7",
           }}
         >
-          <Typography variant="h2" color="#66FCF1" style={Styles.nameFont}>
+          <Typography variant="h2" color="#2924a6" style={Styles.nameFont}>
             I'm Sai Kumar
           </Typography>
-          <Typography variant="h4">FrontEnd Developer</Typography>
+          <Typography variant="h4" color="#2924a6">
+            FrontEnd Developer
+          </Typography>
         </Box>
         <SocialMediaApps />
         <Button
           onClick={onClickHandler}
           variant="contained"
-          sx={{ backgroundColor: "#45A29E", marginTop: "10px" }}
+          sx={{ backgroundColor: "#2924a6", marginTop: "10px" }}
         >
           More About SaiKumar
         </Button>
+        <ToastContainer />
       </Container>
     </>
   );
@@ -48,6 +66,7 @@ const Styles = {
   nameFont: {
     fontFamily: "kalam",
     fontWeight: 700,
+    paddingTop: "10px",
   },
 };
 export default NameInfo;

@@ -68,7 +68,7 @@
 import React from "react";
 import ProjectsData from "../../../Json dataFiles/ProjectsData.json";
 import demoProject from "../../../assets/Images/demoProject.jpg";
-
+import "../FeaturedProjects/FeaturedProject.css";
 const AllProjects = () => {
   const ProjectsJsonData = ProjectsData;
   return (
@@ -78,9 +78,9 @@ const AllProjects = () => {
           style={{
             fontWeight: 700,
             marginTop: "20px",
-            borderBottom: "2px solid black",
+            borderBottom: "2px solid #2924a6",
             display: "inline-block",
-            color: "black",
+            color: "#2924a6",
             marginBottom: "10px",
           }}
         >
@@ -90,10 +90,17 @@ const AllProjects = () => {
           {ProjectsJsonData.map((card) => {
             return (
               <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                <div class="card">
-                  <img src={demoProject} class="card-img-top" alt="loading.." />
+                <div class="card shadow my-card">
+                  <img
+                    src={require(`../../../assets/Images/projectThumbnails/projectImage${card.id}.jpg`)}
+                    class="card-img-top"
+                    alt="loading.."
+                  />
+
                   <div class="card-body">
-                    <h5 class="card-title">{card.title}</h5>
+                    <h5 class="card-title" style={{ color: "#2924a6" }}>
+                      {card.title}
+                    </h5>
                     <p class="card-text">{card.description}</p>
                   </div>
                   <div

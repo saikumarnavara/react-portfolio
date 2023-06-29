@@ -109,6 +109,7 @@ import React from "react";
 import ProjectData from "../../../Json dataFiles/ProjectsData.json";
 import demoProject from "../../../assets/Images/demoProject.jpg";
 import { useNavigate } from "react-router";
+import "../FeaturedProjects/FeaturedProject.css";
 const FeaturedProjects = () => {
   const navigate = useNavigate();
   const ViewProjects = () => {
@@ -120,15 +121,22 @@ const FeaturedProjects = () => {
     const item = cardsData[i];
     UpdatedItems.push(item);
   }
+
+  // const cardStyle = {
+  //   transition: "transform 0.3s ease-in-out",
+  //   ":hover": {
+  //     transform: "scale(1.05)",
+  //   },
+  // };
   return (
     <div>
       <h1
         style={{
           fontWeight: 700,
           marginTop: "20px",
-          borderBottom: "2px solid white",
+          borderBottom: "2px solid #2924a6",
           display: "inline-block",
-          color: "white",
+          color: "#2924a6",
         }}
       >
         Featured Projects
@@ -138,10 +146,16 @@ const FeaturedProjects = () => {
           {UpdatedItems.map((card) => {
             return (
               <div class="col-lg-4 col-md-6 col-sm-12 mb-4" key={card.id}>
-                <div class="card">
-                  <img src={demoProject} class="card-img-top" alt="loading.." />
+                <div class="card shadow my-card">
+                  <img
+                    src={require(`../../../assets/Images/projectThumbnails/projectImage${card.id}.jpg`)}
+                    class="card-img-top"
+                    alt="loading.."
+                  />
                   <div class="card-body">
-                    <h5 class="card-title">{card.title}</h5>
+                    <h5 class="card-title" style={{ color: "#2924a6" }}>
+                      {card.title}
+                    </h5>
                     <p class="card-text">{card.description}</p>
                     <div
                       class="card-body d-flex"
@@ -209,7 +223,7 @@ const FeaturedProjects = () => {
         </div>
       </div>
       <button type="button" class="btn btn-primary" onClick={ViewProjects}>
-        All Project
+        View All Project
       </button>
     </div>
   );
